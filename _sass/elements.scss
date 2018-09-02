@@ -1,9 +1,11 @@
 html, body {
-	padding: 0;
+	background-image: url('/images/bg-noise.png');
+	color: $paragraph-color;
+	font-family: $paragraph-font-family;
+	font-weight: $paragraph-weight;
 	margin: 0;
-	font-family: 'Open Sans', sans-serif;
-	color: #333;
 	min-width: 380px;
+	padding: 0;
 }
 
 img {
@@ -11,16 +13,29 @@ img {
 }
 
 hr {
-	height:1px;
+	background-color: #236ace;
 	border: 0;
-	background-color: #ddd;
+	height:1px;
 	margin-bottom: 50px;
 }
 
+h1, h2, h3, h4 {
+	color: $header-color;
+	font-family: $header-font-family;
+	font-weight: $header-weight;
+
+	a {
+		color: $header-color;
+		font-family: $header-font-family;
+		font-weight: $header-weight;
+		text-decoration: none;
+	}
+}
+
 h1 {
-	padding: 0;
-	margin: 0 0 20px 0;
 	font-size: 3em;
+	margin: 0 0 20px 0;
+	padding: 0;
 }
 
 h2 {
@@ -35,9 +50,11 @@ h3 {
 }
 
 p {
+	color: $paragraph-color;
+	font-family: $paragraph-font-family;
 	font-size: 1.3em;
+	font-weight: $paragraph-weight;
 	line-height: 1.4em;
-	color: #888;
 }
 
 nav {
@@ -54,19 +71,18 @@ section {
 
 form {
 	display: flex;
-	max-width: 500px;
 	margin: 0 auto;
+	max-width: 500px;
 
 	input[type="text"] {
+		border: 1px solid $brand-color;
 		flex-grow: 1;
 		flex-shrink: 1;
 		width: 100%;
-		border: 1px solid #ddd;
-
 
 		&, &:focus {
-			border-top-left-radius: 30px;
 			border-bottom-left-radius: 30px;
+			border-top-left-radius: 30px;
 		}
 
 		&:focus {
@@ -76,8 +92,8 @@ form {
 	}
 
 	input[type="submit"] {
-		border-top-right-radius: 30px;
 		border-bottom-right-radius: 30px;
+		border-top-right-radius: 30px;
 
 		&:hover {
 			background: darken($brand-color, 5%);
@@ -87,23 +103,23 @@ form {
 
 .button a, input[type="submit"], input[type="text"] {
 	border: 0;
-	padding: 15px 40px;
 	box-sizing: content-box;
 	font-size: 1em;
 	font-weight: 100;
+	padding: 15px 40px;
 }
 
 .button a, input[type="submit"] {
 	background: $brand-color;
-	color: #fff;
+	color: $button-color;
 	cursor: pointer;
 	font-weight: bold;
 }
 
 .button a {
+	border-radius: 5px;
 	display: inline-block;
 	text-decoration: none;
-	border-radius: 30px;
 	transition: 200ms ease-in background;
 
 	&:hover {

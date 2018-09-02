@@ -1,22 +1,22 @@
 # ----
 # Site
 
-title: Cause Template
-url: https://clean-oryx.cloudvent.net
+title: Archeotech Joinville
+url: https://www.archeotech.com.br
 baseurl:
 google_analytics_key:
 
 # Values for the jekyll-seo-tag gem (https://github.com/jekyll/jekyll-seo-tag)
 logo: /siteicon.png
-description: Jekyll template with example content for a not-for-profit organisation.
+description: Projeto Arqueotech de Joinville, Santa Catarina
 author:
   name:
   email:
   twitter: # twitter username without the @ symbol
 social:
-  name: Cause Template
+  name: Archeotech Joinville
   links:
-    - https://github.com/CloudCannon/cause-jekyll-template
+    - https://github.com/archeotech-joinville
 
 # -----
 # Build

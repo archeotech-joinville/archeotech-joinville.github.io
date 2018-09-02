@@ -1,6 +1,18 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:200,300,400|Rubik:400,500');
+
 // Breakpoints
 $tablet: "(min-width: 450px)";
 $mid-point: "(min-width: 620px)";
 $desktop: "(min-width: 768px)";
 
-$brand-color: #20ca5a;
+$brand-color: #21ffff;
+$header-color: #ff9a56;
+$paragraph-color: #ffff;
+
+$blue-color: #236ace;
+$button-color: #411e2f;
+
+$header-font-family: 'Rubik', sans-serif;
+$header-weight: 500;
+$paragraph-font-family: 'Montserrat', sans-serif;
+$paragraph-weight: 200;
