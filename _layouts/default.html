@@ -27,41 +27,22 @@
 		</nav>
 		<div class="content">
 			{{ content }}
+
 		</div>
 		<footer>
-			<div class="container">
-				<div class="about">
-					<p>{{ site.data.company.mission_statement }}</p>
+			<div class="container" style="display: block; width: 100%">
+				<div class="titles" style="width: 100%; display: flex; flex-direction: row; margin: 0">
+					<div class="title" style="width: 34%; margin:0; padding-left: 0;  padding-right: 0"><h4 class="blue-color">APOIO</h4></div>
+					<div class="title" style="width: 66%; margin: 0;"><h4 class="blue-color">PATROCÍNIO</h4></div>
 				</div>
-
-				<div class="contact">
-					<address>
-						<a href="https://www.google.com/maps/place/{{ site.data.company.address | url_encode }}">
-							{% include icons/footer.html icon="place" %} {{ site.data.company.address }}
-						</a>
-					</address>
-					<p class="email">
-						<a href="mailto:{{ site.data.company.email }}">
-							{% include icons/footer.html icon="email" %} {{ site.data.company.email }}
-						</a>
-					</p>
-					<p class="phone">
-						<a href="tel:{{ site.data.company.phone | replace: ' ', '-' }}">
-							{% include icons/footer.html icon="phone" %} {{ site.data.company.phone }}
-						</a>
-					</p>
-				</div>
-
-				<div class="sharing">
-					<a class="facebook" href="https://www.facebook.com/{{ site.data.company.facebook }}">
-						{% include icons/social-media.html social_icon="facebook" %}
-					</a>
-					<a class="twitter" href="https://twitter.com/{{ site.data.company.twitter }}">
-						{% include icons/social-media.html social_icon="twitter" %}
-					</a>
-					<a class="google-plus" href="https://plus.google.com/{{ site.data.company.google_plus }}">
-						{% include icons/social-media.html social_icon="google-plus" %}
-					</a>
+				<div class="logos"  style="width: 100%; display: flex; flex-direction: row;">
+					<div class="logo" style="width: 34%; padding-left: 0;">
+						<img src="/images/fablabjoinville.png" width="400" style="margin-bottom: 10px" />
+						<img src="/images/masj.png" width="400" />
+					</div>
+					<div class="logo" style="width: 66%; padding-left: 10px">
+						<img src="/images/simdec.png" width="780" />
+					</div>
 				</div>
 			</div>
 		</footer>
