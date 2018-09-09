@@ -1,22 +1,22 @@
 # ----
 # Site
 
-title: Archeotech Joinville
+title: "Archeotech Joinville: o uso da tecnologia para a re(produção) de artefatos do passado"
 url: https://www.archeotech.com.br
 baseurl:
 google_analytics_key:
 
 # Values for the jekyll-seo-tag gem (https://github.com/jekyll/jekyll-seo-tag)
 logo: /siteicon.png
-description: Projeto Arqueotech de Joinville, Santa Catarina
+description: "Archeotech Joinville: o uso da tecnologia para a re(produção) de artefatos do passado"
 author:
-  name:
+  name: Archeotech Joinville
   email:
   twitter: # twitter username without the @ symbol
 social:
   name: Archeotech Joinville
   links:
-    - https://github.com/archeotech-joinville
+    - https://www.archeotech.com.br
 
 # -----
 # Build
