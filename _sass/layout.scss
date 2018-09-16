@@ -7,6 +7,17 @@
   box-sizing: border-box;
 }
 
+.header {
+  a {
+    text-decoration: none;
+    font-weight: bold;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
 header {
   padding-bottom: 50px;
 
