@@ -24,7 +24,7 @@ title: Archeotech Joinville
 </header>
 
 <div id="projeto" class="container">
-  <h2 style="text-align: center;">EXPERIMENTANDO VERSTÍGIOS DO PASSADO COM A<br>(RE)PRODUÇÃO DE ARTEFATOS ARQUEOLÓGICOS EM 3D</h2>
+  <h2 style="text-align: center;">EXPERIMENTANDO VESTÍGIOS DO PASSADO COM A<br>(RE)PRODUÇÃO DE ARTEFATOS ARQUEOLÓGICOS EM 3D</h2>
   <p style="text-align: justify">
     Aprovado em 2016 no Edital de Apoio à Cultura do Sistema Municipal de Desenvolvimento pela Cultura (Simdec) da Secretaria de Turismo e Cultura (Secult) da Prefeitura Municipal de Joinville, na Área de Patrimônio Cultural - Modalidade Material, o Projeto abrange:
   </p>
@@ -451,10 +451,31 @@ title: Archeotech Joinville
   <h2>SAIBA MAIS</h2>
   <div class="posts">
     {% for post in site.posts %}
+
+
+
+    {% assign m = post.date | date: "%-m" %}
+    {% capture month_name_pt %}
+      {% case m %}
+        {% when '1' %}Janeiro
+        {% when '2' %}Fevereiro
+        {% when '3' %}Março
+        {% when '4' %}Abril
+        {% when '5' %}Maio
+        {% when '6' %}Junho
+        {% when '7' %}Julho
+        {% when '8' %}Agosto
+        {% when '9' %}Setembro
+        {% when '10' %}Outubro
+        {% when '11' %}Novembro
+        {% when '12' %}Dezembro
+      {% endcase %}
+    {% endcapture %}
+
       <div class="post darker">
         <div class="image" style="background-image: url({{ post.featured_image}})"></div>
         <div class="post-content">
-          <p class="date">{{ post.date | date: '%B %d, %Y' }}</p>
+          <p class="date">{{ post.date | date: "%-d" }} de {{ month_name_pt }} de {{ post.date | date: "%Y" }}</p>
           <h3><a href="{{ post.url }}" class="btn">{{ post.title }}</a></h3>
 
           {{ post.excerpt }}
